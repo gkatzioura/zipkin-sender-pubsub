@@ -26,7 +26,7 @@
     <parent>
         <artifactId>zipkin-gcp-parent</artifactId>
         <groupId>io.zipkin.gcp</groupId>
-        <version>1.0.3-SNAPSHOT</version>
+        <version>1.0.2</version>
     </parent>
 
     <name>Zipkin Sender: Google PubSub</name>
