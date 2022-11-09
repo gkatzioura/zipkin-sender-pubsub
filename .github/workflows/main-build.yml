@@ -26,7 +26,8 @@ jobs:
           distribution: 'adopt'
       - name: Checkout
         uses: actions/checkout@v2
-        fetch-depth: ''
+        with:
+          fetch-depth: ''
       - name: Build with Maven
         run: mvn test
 
