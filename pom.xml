@@ -97,7 +97,6 @@
             <version>1.97.1</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <distributionManagement>
