@@ -47,7 +47,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          export GPG_TTY=$(tty)
           git config --global user.email "zipkin-sender-pubsub@github.com"
           git config --global user.name "zipkin-sender-pubsub release"
           GOOGLE_APPLICATION_CREDENTIALS=$(pwd)/src/test/resources/credentials.json mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=gkatzioura_zipkin-sender-pubsub deploy
